@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html style="font-size: 16px;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="SYSTEM CONTROL DASHBOAR​D">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Home</title>
+    <link rel="stylesheet" href="CSS_FILES\usrDashboard_Designer.css" media="screen">
+<link rel="stylesheet" href="usrDashboard.css" media="screen">
+    <script class="u-script" type="text/javascript" src="JavaScript_FILES\usrDashboard_Designer.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="JavaScript_FILES\usrDashboard.js" defer=""></script>
+    <meta name="generator" content="AMadzore 3.20.4, AMadzore.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "GETRUDE CHIZANA HIT 2025"
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Home">
+    <meta property="og:type" content="website">
+  </head>
+  <body class="u-body">
+<script>if (!localStorage.getItem('Anold') || !(localStorage.getItem('Anold')==="signed in")  ){document.location.href='index.html'}</script>
+    <section class="u-align-center-xs u-clearfix u-image u-section-1" id="sec-7bbf" data-image-width="1280" data-image-height="842">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-align-center-sm u-align-center-xs u-text u-text-default u-text-palette-1-light-2 u-text-1">SYSTEM CONTROL DASHBOAR<span style="font-weight: 700;"></span>D
+        </h2>
+        <h5 class="u-align-center-sm u-align-center-xs u-text u-text-default u-text-2">Check the system LCD for output and sensor readings<br>
+</h5>
+
+        <a id="st2" class="u-border-none u-btn u-button-style u-hover-palette-4-light-1 u-palette-2-base u-btn-1" data-animation-name="zoomIn" data-animation-duration="3500" data-animation-delay="0" data-animation-direction="">STOP ALL TANK FILLERS</a>
+        <a id="st1" class="u-border-none u-btn u-button-style u-hover-palette-5-dark-2 u-btn-2" data-animation-name="zoomIn" data-animation-duration="3500" data-animation-delay="0" data-animation-direction="">START FILLING YOUR HOME<br>WATER TANK
+        </a>
+
+        <a  id="st3" class="u-border-none u-btn u-button-style u-hover-palette-3-light-1 u-palette-2-light-1 u-btn-3" data-animation-name="jackInTheBox" data-animation-duration="7750" data-animation-delay="2250" data-animation-direction="">CHECK EXISTING WATER PURITY</a>
+        <a   id="st4"  class="u-border-none u-btn u-button-style u-hover-palette-5-dark-2 u-palette-3-base u-btn-4">START WATER PURIFICATION</a>
+        <a    id="st5" class="u-border-none u-btn u-button-style u-hover-palette-3-light-2 u-palette-2-dark-1 u-btn-5" data-animation-name="fadeIn" data-animation-duration="1000" data-animation-delay="0">STOP WATER PURIFICATION PROCESS</a>
+      
+<script>
+if (!localStorage.getItem('ipa')){alert("We have failed to connect to your home network. Make sure you have followed the user guide at the bottom of this page to establish a successful connection !");};
+document.getElementById('st1').href = "http://" + localStorage.getItem('ipa')?.toString().trim() + '/start?filling=1';
+document.getElementById('st2').href = "http://" + localStorage.getItem('ipa')?.toString().trim() + '/start?filling=0';
+document.getElementById('st3').href = "http://" + localStorage.getItem('ipa')?.toString().trim() + '/start?checkWaterPurity=1';
+document.getElementById('st4').href = "http://" + localStorage.getItem('ipa')?.toString().trim() + '/start?purifying=1';
+document.getElementById('st5').href = "http://" + localStorage.getItem('ipa')?.toString().trim() + '/start?purifying=0';
+
+</script>
+
+
+</div>
+    </section>
+    <section class="u-align-center-xs u-clearfix u-section-2" id="sec-d346">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <p class="u-align-center-sm u-align-center-xs u-text u-text-default u-text-1">SYSTEM BY GETRUDE CHIZANA (HARARE INSTITUTE OF TECHNOLOGY 2025)</p>
+      </div>
+    </section>
+    
+    
+       <section class="u-align-center-xs u-clearfix u-section-2" id="sec-d346">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+<p style="text-align:center;">
+<center>
+       Click the button below to logout of your account
+<br><br>
+<span style="text-align:left">
+<h2>SYSTEM USER GUIDE</h2>
+If you are facing challenges at your home, find the following User Guide for ease of navigation and use:
+<ul>
+<li>Make sure you have a Hotspot Named 'GZana' at your home place and the password should be set to '123456789'</li>
+<li>Restart your microcontroller and check the LCD output, it must display your microcontroller IP address</li>
+<li>Make sure the IP address displayed matches the IP address displayed on this site. If these do not match, you need to adjust the IP address from this site to match the IP address displayed on your IoT components LCD</li>
+<li>Once this is done, test again. You are now good to go !</li>
+
+</ul>
+</span>
+
+<center>
+MICROCONTROLLER IP ADDRESS:<br>
+<textarea class='form-control' style="min-width:80%;font-size:1em;" rows='5' id='ipaddrr'></textarea>
+<br>
+<button style="padding:20px;" onclick="event.preventDefault();localStorage.setItem('ipa',document.getElementById('ipaddrr').value);alert('The address of your home microcontroller is now saved successfully. If this is different from the one currently displayed on your IoT LCD, please correct it first then retry. Also make sure that you stay connected on the same home local area network with your components to get full system functionality !');document.location.href=document.location.href">Save Microcontroller Address</button>
+<script>
+if (!localStorage.getItem('ipa') || localStorage.getItem('ipa')===""){
+document.getElementById('ipaddrr').value="DELETE EVERYTHING AND ENTER YOUR HOME MICRO CONTROLLER ADDRESS HERE. THIS CAN BE URL OR IP ADDRESS";
+}else
+{document.getElementById('ipaddrr').value=localStorage.getItem('ipa');
+}
+</script>
+</center>
+</br>
+<br><br>
+       <a onclick="localStorage.clear();document.location.href=document.location.href" class="u-border-none u-btn u-button-style u-hover-palette-3-light-2 u-palette-2-dark-1 u-btn-5" data-animation-name="fadeIn" data-animation-duration="1000" data-animation-delay="0">Logout</a>
+</center>
+</p>
+      </div>
+    </section>
+    <section class="u-backlink u-clearfix u-grey-80">
+     SMART SOLAR ENERGY SYSTEM IN WATER PURIFICATION FOR RURAL COMMUNITIES IN ZIMBABWE
+    </section>
+  </body>
+</html>
